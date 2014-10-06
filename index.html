@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XenoHarmonica</title>
+    <meta name="description" content="Bayan keyboard emulator"/>
+    <meta name="keywords" content="MIDI harmonica accordion bayan synthesizer keyboard music education instrument"/>
+    <link rel="shortcut icon" href="img/icon.ico"/>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        body {
+            font-family: Verdana, Arial, sans-serif;
+            background-color: #EEE;
+        }
+
+        #center {
+            width: 802px;
+            margin: 0 auto 25px auto;
+            padding: 10px;
+            background-color: #FFF;
+            border: solid 1px #CCC;
+        }
+
+        #title {
+            font-size: medium;
+            text-align: center;
+
+            font-family: Verdana, Arial, sans-serif;
+            height: 25px;
+            line-height: 25px;
+            background: url('img/header_fill.gif') repeat-x;
+        }
+
+        #applet {
+            width: 800px;
+            height: 200px;
+            border: solid 1px #CCC;
+            margin-bottom: 25px;
+        }
+
+        #download_zip, #install_jre {
+            height: 25px;
+            line-height: 25px;
+            padding-left: 30px;
+        }
+
+        #download_zip {
+            float: left;
+            background: url('img/download.png') no-repeat;
+        }
+
+        #install_jre {
+            float: right;
+            background: url('img/jre.png') no-repeat;
+        }
+
+        h2 {
+            font-size: medium;
+            padding: 50px 10px 25px 10px;
+        }
+
+        p {
+            padding-bottom: 25px;
+        }
+
+        ul {
+            text-align: left;
+            list-style: inside;
+        }
+
+        ul li {
+            padding-bottom: 10px;
+        }
+
+        hr {
+            height: 0;
+            border-bottom: solid 1px #CCC;
+            margin: 50px 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="title">XenoHarmonica</h1>
+
+<div id="center">
+    <div id="applet">
+        <applet code="xantorohara.xenoharmonica.Applet" archive="xenoharmonica.jar" width="800" height="200">
+            XenoHarmonica Java applet
+        </applet>
+    </div>
+    <a id="download_zip" href="xenoharmonica.jar">Download program</a>
+    <a id="install_jre" href="http://www.java.com/en/download/index.jsp">Install Java</a>
+
+    <div style="clear: both; height: 100px;"></div>
+
+    <hr/>
+
+    <h2>About</h2>
+    <img src="img/bayan.jpg" alt="Bayan photo" style="float:left; padding-right:10px;"/>
+
+
+    <p>
+        <b>Bayan</b> - is a musical instrument, type of chromatic button accordion.
+    </p>
+
+    <p>
+        <b>XenoHarmonica</b> - is a bayan keyboard emulator, the application for personal computers.
+        You can <a href="xenoharmonica.jar">download</a> desktop version of XenoHarmonica or use it from the browser.
+        XenoHarmonica is free for education and non-commercial usage.
+        It needs <a href="http://www.java.com/en/download/index.jsp">Java JRE</a> on your computer.
+        You have to install JRE in order to use this program.
+    </p>
+
+    <div style="clear:both;"></div>
+
+    <h2>Play</h2>
+
+    <ul>
+        <li>Press some key or mouse button for playing.</li>
+        <li>Use Mouse + 'Ctrl' to play multiple notes.</li>
+        <li>Keys '1'..'9','0' are binded for different instruments:
+            <br/>
+            <img src="img/select_instrument.png" alt="Instrument changing" style="margin: 25px;"/>
+        </li>
+        <li>Bind instruments from Setup dialog:
+            <br/>
+            <img src="img/setup_instrument.png" alt="Instrument selection" style="margin: 25px;"/>
+        </li>
+        <li>Keys '-' and '+' shift octave.</li>
+    </ul>
+
+    <div style="padding: 10px; text-align: center;">&copy; Xantorohara 2007-2013</div>
+</div>
+</body>
+</html>
