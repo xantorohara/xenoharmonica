@@ -1,0 +1,22 @@
+<project name="xenoharmonica" default="build" basedir=".">
+
+    <target name="clean">
+        <delete dir="out"/>
+    </target>
+
+    <target name="build" depends="clean">
+        <mkdir dir="out/classes"/>
+        <javac srcdir="src" destdir="out/classes" includeantruntime="false"/>
+        <buildnumber/>
+        <jar basedir="out/classes" jarfile="out/${ant.project.name}.jar">
+            <manifest>
+                <attribute name="Built-By" value="Xantorohara"/>
+                <attribute name="Built-Version" value="${build.number}"/>
+                <attribute name="Main-Class" value="io.github.xantorohara.xenoharmonica.Launcher"/>
+            </manifest>
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </jar>
+    </target>
+</project>
